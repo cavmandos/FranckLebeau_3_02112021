@@ -1,3 +1,39 @@
+.partfonction {
+    margin-top: 40px;
+}
+
 .partfonction__box {
     display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #f6f6f6;
+    margin: 20px 40px 20px 40px;
+    border-radius: 17px;
+    height: 55px;
+    box-shadow: 1px 5px 5px #e6e6e6;
+}
+
+.partfonction__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9356DC;
+    width: 20px;
+    color: white;
+    border-radius: 20px;
+    position: relative;
+    right: 7px;
+}
+
+.partfonction__txt {
+    font-size: 15px;
+}
+
+.partfonction__box .logo {
+    color: #7e7e7e;
+    margin: 0px 25px 0px 20px;
+}
+
+.titres-parties {
+    margin-left: 25px;
 }

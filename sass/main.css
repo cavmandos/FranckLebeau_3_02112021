@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Roboto';
-  src: url("Roboto-Regular.eot");
-  src: url("Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular.woff") format("woff"), url("Roboto-Regular.ttf") format("truetype");
+  src: url("../fonts/Roboto-Regular.ttf");
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url("Roboto-Bold.eot");
-  src: url("Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("Roboto-Bold.woff") format("woff"), url("Roboto-Bold.ttf") format("truetype");
+  src: url("../fonts/Roboto-Bold.eot");
+  src: url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url("Roboto-Light.eot");
-  src: url("Roboto-Light.eot?#iefix") format("embedded-opentype"), url("Roboto-Light.woff") format("woff"), url("Roboto-Light.ttf") format("truetype");
+  src: url("../fonts/Roboto-Light.eot");
+  src: url("../fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -33,10 +33,68 @@ body {
   font-family: 'Roboto';
 }
 
+.btn {
+  color: white;
+  margin-top: 10px;
+  padding: 17px;
+  border-radius: 25px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  border: none;
+  font-size: 14px;
+}
+
+.partfonction {
+  margin-top: 40px;
+}
+
 .partfonction__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f6f6;
+  margin: 20px 40px 20px 40px;
+  border-radius: 17px;
+  height: 55px;
+  -webkit-box-shadow: 1px 5px 5px #e6e6e6;
+          box-shadow: 1px 5px 5px #e6e6e6;
+}
+
+.partfonction__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #9356DC;
+  width: 20px;
+  color: white;
+  border-radius: 20px;
+  position: relative;
+  right: 7px;
+}
+
+.partfonction__txt {
+  font-size: 15px;
+}
+
+.partfonction__box .logo {
+  color: #7e7e7e;
+  margin: 0px 25px 0px 20px;
+}
+
+.titres-parties {
+  margin-left: 25px;
 }
 
 .img-box {
@@ -91,12 +149,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: #f6f6f6;
+  padding: 10px 0px 40px 0px;
 }
 
 .intro__titre {
   font-weight: bold;
   font-size: 25px;
-  padding: 10px 30px 0px 30px;
+  padding: 10px 50px 0px 50px;
   text-align: center;
 }
 
@@ -104,6 +163,7 @@ body {
   font-weight: 300;
   text-align: center;
   margin-top: 0px;
+  padding: 0px 40px 0px 40px;
   color: #838383;
 }
 /*# sourceMappingURL=main.css.map */
