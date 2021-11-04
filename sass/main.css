@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url("Roboto-Regular.eot");
+  src: url("Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular.woff") format("woff"), url("Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("Roboto-Bold.eot");
+  src: url("Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("Roboto-Bold.woff") format("woff"), url("Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("Roboto-Light.eot");
+  src: url("Roboto-Light.eot?#iefix") format("embedded-opentype"), url("Roboto-Light.woff") format("woff"), url("Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin: 0px;
+  font-family: 'Roboto';
+}
+
+.partfonction__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.img-box {
+  width: 300px;
+}
+
+.img_logo {
+  width: 180px;
+}
+
+.headermain__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px;
+  margin: 10px 0px 10px 0px;
+}
+
+.headermain__loc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40px;
+  background-color: #eaeaea;
+  -webkit-box-shadow: 0 -5px 5px -5px #979797;
+          box-shadow: 0 -5px 5px -5px #979797;
+}
+
+.headermain__ville {
+  font-size: 15px;
+  margin-left: 8px;
+}
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f6f6;
+}
+
+.intro__titre {
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px 30px 0px 30px;
+  text-align: center;
+}
+
+.intro__sstitre {
+  font-weight: 300;
+  text-align: center;
+  margin-top: 0px;
+  color: #838383;
+}
+/*# sourceMappingURL=main.css.map */

@@ -3,23 +3,25 @@
 <head>
     <meta charset="utf-8">
     <title>Ohmyfood! - Accueil</title>
-    <link rel="stylesheet" href="public/css/style.css"/>
+    <link rel="stylesheet" href="sass/main.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/4432f937c3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class="logoprincipal">
+    <header class="headermain">
+        <div class="headermain__logo">
             <img class="img_logo" src="images/logo/ohmyfood.png" alt="logo du site"/>
         </div>
-        <div class="localisation">
+        <div class="headermain__loc">
             <i class="fas fa-map-marker-alt"></i>
-            <p>Paris, Belleville</p>
+            <p class="headermain__ville">Paris, Belleville</p>
         </div>
     </header>
+
     <main>
         <div class="intro">
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+            <h1 class="intro__titre">Réservez le menu qui vous convient</h1>
+            <p class="intro__sstitre">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
             <a href="#"><input type="button" class="btn" value="Explorez nos restaurant"></a>
         </div>
 
