@@ -8,8 +8,8 @@
 </head>
 <body>
     <header class="headeralt">
-        <div class="backtomenu">
-            <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+        <div class="headeralt__fleche">
+            <a href="index.html"><i class="fas fa-arrow-left logofleche"></i></a>
         </div>
         <div class="headeralt__logo">
             <img class="headermain__img" src="images/logo/ohmyfood.png" alt="logo du site"/>
@@ -17,88 +17,111 @@
     </header>
 
     <main>
-        <div class="back-img">
-            <img class="img-menu" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image restaurant"/>
+        <div class="contphoto">
+            <img class="contphoto__img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image restaurant"/>
         </div>
+
         <div class="cont-menus">
+
             <div class="titrecoeur">
-                <h4 class="titrerestmenus">La palette du goût</h4>
+                <h4 class="titrecoeur__titre">La palette du goût</h4>
                 <i class="far fa-heart"></i>
             </div>
+
             <h5 class="titremenus">entrées</h5>
             <div class="contboxmenu">
                 <div class="boxmenu">
                     <h6 class="boxmenu__titre">Fricassée d'escargot</h6>
-                    <p class="boxmenu__sstitre">Au piment d'espelette</p>
-                    <span class="boxmenu__prix">25€</span>
+                    <div class="boxmenu__sscont">
+                        <p class="boxmenu__sstitre">Au piment d'espelette</p>
+                        <span class="boxmenu__prix">25€</span>
+                    </div>
                 </div>
                 <div class="boxmenu">
                     <h6 class="boxmenu__titre">Foie gras de canard mi-cuit</h6>
-                    <p class="boxmenu__sstitre">Et ses copeaux de truffe noire</p>
-                    <span class="boxmenu__prix">35€</span>
+                    <div class="boxmenu__sscont">
+                        <p class="boxmenu__sstitre">Et ses copeaux de truffe noire</p>
+                        <span class="boxmenu__prix">35€</span>
+                    </div>
                 </div>
                 <div class="boxmenu">
                     <h6 class="boxmenu__titre">Oeuf au plat</h6>
-                    <p class="boxmenu__sstitre">Assaisonné à la truffe sur lit de caviar</p>
-                    <span class="boxmenu__prix">20€</span>
+                    <div class="boxmenu__sscont">
+                        <p class="boxmenu__sstitre">Assaisonné à la truffe sur lit de caviar</p>
+                        <span class="boxmenu__prix">20€</span>
+                    </div>
                 </div>
             </div>
             <h5 class="titremenus">plats</h5>
             <div class="contboxmenu">
                 <div class="boxmenu">
                     <h6 class="boxmenu__titre">Filet de boeuf aux herbes</h6>
-                    <p class="boxmenu__sstitre">Accompagné de sa ribambelle de légumes</p>
-                    <span class="boxmenu__prix">40€</span>
+                    <div class="boxmenu__sscont">
+                        <p class="boxmenu__sstitre">Accompagné de sa ribambelle de légumes</p>
+                        <span class="boxmenu__prix">40€</span>
+                    </div>
                 </div>
                 <div class="boxmenu">
                     <h6 class="boxmenu__titre">Parmentier de queue de boeuf</h6>
-                    <p class="boxmenu__sstitre">À la truffe noire sur sa purée de panais</p>
-                    <span class="boxmenu__prix">35€</span>
+                    <div class="boxmenu__sscont">
+                        <p class="boxmenu__sstitre">À la truffe noire sur sa purée de panais</p>
+                        <span class="boxmenu__prix">35€</span>
+                    </div>
                 </div>
                 <div class="boxmenu">
                     <h6 class="boxmenu__titre">Filet de turbo</h6>
-                    <p class="boxmenu__sstitre">Aux agrumes</p>
-                    <span class="boxmenu__prix">44€</span>
+                    <div class="boxmenu__sscont">
+                        <p class="boxmenu__sstitre">Aux agrumes</p>
+                        <span class="boxmenu__prix">44€</span>
+                    </div>
                 </div>
             </div>
             <h5 class="titremenus">desserts</h5>
             <div class="contboxmenu">
                 <div class="boxmenu">
                     <h6 class="boxmenu__titre">Paris-Brest</h6>
-                    <p class="boxmenu__sstitre">Revisité</p>
-                    <span class="boxmenu__prix">18€</span>
+                    <div class="boxmenu__sscont">
+                        <p class="boxmenu__sstitre">Revisité</p>
+                        <span class="boxmenu__prix">18€</span>
+                    </div>
                 </div>
                 <div class="boxmenu">
                     <h6 class="boxmenu__titre">Macaron au chocolat d'exception</h6>
-                    <p class="boxmenu__sstitre">Et glace à la vanille de Madagascar</p>
-                    <span class="boxmenu__prix">22€</span>
+                    <div class="boxmenu__sscont">
+                        <p class="boxmenu__sstitre">Et glace à la vanille de Madagascar</p>
+                        <span class="boxmenu__prix">22€</span>
+                    </div>
                 </div>
                 <div class="boxmenu">
                     <h6 class="boxmenu__titre">Mousse au chocolat</h6>
-                    <p class="boxmenu__sstitre">Au piment d'espelette et à la truffe noire</p>
-                    <span class="boxmenu__prix">23€</span>
+                    <div class="boxmenu__sscont">
+                        <p class="boxmenu__sstitre">Au piment d'espelette et à la truffe noire</p>
+                        <span class="boxmenu__prix">23€</span>
+                    </div>
                 </div>
             </div>
-            <input type="button" class="butn" value="Commander"/>
+            <div class="btncmd">
+                <input type="button" class="btn" value="Commander"/>
+            </div>
         </div>
     </main>
 
     <footer>
-        <div class="petitlogo">
-            <img src="images/logo/ohmyfood@2x.svg" alt="logo"/>
+        <div class="contfoot">
+            <p class="contfoot__logo">ohmyfood</p>
+            <div class="contfoot__logotxt" >
+                <i class="fas fa-utensils logofooter"></i>
+                <p class="contfoot__txt">Proposer un restaurant</p>
+            </div>
+            <div class="contfoot__logotxt" >
+                <i class="fas fa-hands-helping logofooter"></i>
+                <p class="contfoot__txt">Devenir partenaire</p>
+            </div>
+            <p class="contfoot__txt">Mentions légales</p>
+            <address>
+                <a href="mailto:#">Contact</a>
+            </address>
         </div>
-        <div class="devenir" >
-            <i class="fas fa-utensils"></i>
-            <p>Proposer un restaurant</p>
-        </div>
-        <div class="devenir" >
-            <i class="fas fa-hands-helping"></i>
-            <p>Devenir partenaire</p>
-        </div>
-        <p>Mentions légales</p>
-        <address>
-            <a href="mailto:#">Contact</a>
-        </address>
     </footer>
 </body>
 </html>
