@@ -1,33 +1,35 @@
 @import "./directory/base/base";
 @import "./directory/components/components";
+@import "./directory/layouts/layouts";
 @import "./directory/pages/pages";
 
-.img-box {
-    width: 300px;
-}
+.headermain {
+    background-color: #ffffff;
 
-.img_logo {
-    width: 180px;
-}
+    &__img {
+        width: 180px;
+    }
 
-.headermain__logo {
-    display: flex;
-    justify-content: center;
-    padding: 8px;
-    margin: 10px 0px 10px 0px;
-}
+    &__logo {
+        display: flex;
+        justify-content: center;
+        padding: 18px 8px 8px 8px;
+        margin: 0px 0px 10px 0px;
+    }
 
-.headermain__loc {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    background-color: #eaeaea;
-    box-shadow: 0 -5px 5px -5px rgb(151, 151, 151);
-}
-.headermain__ville {
-    font-size: 15px;
-    margin-left: 8px;
+    &__loc {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        background-color: #eaeaea;
+        box-shadow: 0 -5px 5px -5px rgb(151, 151, 151);
+    }
+
+    &__ville {
+        font-size: 15px;
+        margin-left: 8px;
+    }
 }
 
 .intro {
@@ -48,7 +50,7 @@
         font-weight: 300;
         text-align: center;
         margin-top: 0px;
-        padding: 0px 40px 0px 40px;
+        padding: 0px 30px 0px 30px;
         color: #838383;
     }
 }

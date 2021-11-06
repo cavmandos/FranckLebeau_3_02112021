@@ -1,0 +1,39 @@
+footer {
+    background-color: #353535;
+    color: white;
+    font-size: 14px;
+}
+
+.contfoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 20px;
+
+    &__logo {
+        color: white;
+        font-family: "Shrikhand";
+        font-size: 20px;
+    }
+
+    &__logotxt {
+        display: flex;
+        align-items: center;
+    }
+
+    &__txt {
+        margin: 7px 0px 7px 0px;
+    }
+}
+
+.logofooter {
+    margin-right: 10px;
+}
+
+address {
+    margin: 7px 0px 7px 0px;
+}
+
+address a {
+    color: white;
+}

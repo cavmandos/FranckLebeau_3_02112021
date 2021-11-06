@@ -1,32 +1,35 @@
 .partfonction {
-    margin-top: 40px;
-}
+    margin: 40px 0px 40px 0px;
+    padding: 20px 0px 40px 0px;
+    background-color: white;
 
-.partfonction__box {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    background-color: #f6f6f6;
-    margin: 20px 40px 20px 40px;
-    border-radius: 17px;
-    height: 55px;
-    box-shadow: 1px 5px 5px #e6e6e6;
-}
 
-.partfonction__number {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #9356DC;
-    width: 20px;
-    color: white;
-    border-radius: 20px;
-    position: relative;
-    right: 7px;
-}
+    &__box {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        background-color: #f6f6f6;
+        margin: 20px 40px 20px 40px;
+        border-radius: 17px;
+        height: 55px;
+        box-shadow: 1px 5px 5px #e6e6e6;
+    }
 
-.partfonction__txt {
-    font-size: 15px;
+    &__number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #9356DC;
+        width: 20px;
+        color: white;
+        border-radius: 20px;
+        position: relative;
+        right: 7px;
+    }
+
+    &__txt {
+        font-size: 15px;
+    }
 }
 
 .partfonction__box .logo {
@@ -36,4 +39,71 @@
 
 .titres-parties {
     margin-left: 25px;
+}
+
+.partrestos .titres-parties {
+    margin-bottom: 10px;
+}
+
+.cont-resto-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partrestos {
+    margin: 50px 0px 50px 0px;
+    background-color: #f6f6f6;
+}
+
+.resto-box {
+    margin: 20px 0px 20px 0px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 1px 4px 4px #e4e3e3;
+
+    &__imgetnouv {
+        height: 165px;
+    }
+
+    &__imgbox {
+        width: 330px;
+        height: 170px;
+        object-fit: cover;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    &__vignettes {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 55px;
+        padding: 0px 15px 10px 15px;
+    }
+
+    &__txtnew {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        color: #199677;
+        background-color: #99E2D0;
+        width: 80px;
+        height: 30px;
+        position: relative;
+        left: 230px;
+        bottom: 160px;
+    }
+
+    &__titre {
+        position: relative;
+        top: 10px;
+    }
+
+    &__sstitre {
+        margin: 0px 0px 5px 0px;
+        position: relative;
+        bottom: 7px;
+    }
+
 }

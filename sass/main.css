@@ -25,12 +25,26 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Shrikhand';
+  src: url("../fonts/Shrikhand-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
   margin: 0px;
   font-family: 'Roboto';
+  background-color: #f6f6f6;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .btn {
@@ -42,10 +56,65 @@ body {
   background: linear-gradient(to top, #9356DC, #FF79DA);
   border: none;
   font-size: 14px;
+  -webkit-box-shadow: 1px 5px 5px #d8d7d7;
+          box-shadow: 1px 5px 5px #d8d7d7;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  font-size: 14px;
+}
+
+.contfoot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 20px;
+}
+
+.contfoot__logo {
+  color: white;
+  font-family: "Shrikhand";
+  font-size: 20px;
+}
+
+.contfoot__logotxt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contfoot__txt {
+  margin: 7px 0px 7px 0px;
+}
+
+.logofooter {
+  margin-right: 10px;
+}
+
+address {
+  margin: 7px 0px 7px 0px;
+}
+
+address a {
+  color: white;
 }
 
 .partfonction {
-  margin-top: 40px;
+  margin: 40px 0px 40px 0px;
+  padding: 20px 0px 40px 0px;
+  background-color: white;
 }
 
 .partfonction__box {
@@ -97,11 +166,98 @@ body {
   margin-left: 25px;
 }
 
-.img-box {
-  width: 300px;
+.partrestos .titres-parties {
+  margin-bottom: 10px;
 }
 
-.img_logo {
+.cont-resto-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partrestos {
+  margin: 50px 0px 50px 0px;
+  background-color: #f6f6f6;
+}
+
+.resto-box {
+  margin: 20px 0px 20px 0px;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 1px 4px 4px #e4e3e3;
+          box-shadow: 1px 4px 4px #e4e3e3;
+}
+
+.resto-box__imgetnouv {
+  height: 165px;
+}
+
+.resto-box__imgbox {
+  width: 330px;
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.resto-box__vignettes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 55px;
+  padding: 0px 15px 10px 15px;
+}
+
+.resto-box__txtnew {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  color: #199677;
+  background-color: #99E2D0;
+  width: 80px;
+  height: 30px;
+  position: relative;
+  left: 230px;
+  bottom: 160px;
+}
+
+.resto-box__titre {
+  position: relative;
+  top: 10px;
+}
+
+.resto-box__sstitre {
+  margin: 0px 0px 5px 0px;
+  position: relative;
+  bottom: 7px;
+}
+
+.headermain {
+  background-color: #ffffff;
+}
+
+.headermain__img {
   width: 180px;
 }
 
@@ -112,8 +268,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 8px;
-  margin: 10px 0px 10px 0px;
+  padding: 18px 8px 8px 8px;
+  margin: 0px 0px 10px 0px;
 }
 
 .headermain__loc {
@@ -163,7 +319,7 @@ body {
   font-weight: 300;
   text-align: center;
   margin-top: 0px;
-  padding: 0px 40px 0px 40px;
+  padding: 0px 30px 0px 30px;
   color: #838383;
 }
 /*# sourceMappingURL=main.css.map */
