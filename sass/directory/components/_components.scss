@@ -1,12 +1,21 @@
 .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
     margin-top: 10px;
     padding: 17px;
     border-radius: 25px;
-    background: linear-gradient(to top,#9356DC,#FF79DA);
+    background: $colorbtn;
     border: none;
     font-size: 14px;
-    box-shadow: 1px 5px 5px #d8d7d7;
+    box-shadow: 1px 4px 4px #d8d7d7;
+
+    &:hover {
+        transition-duration: 0.3s;
+        opacity: 0.85;
+        @include moreshadow;
+    }
 }
 
 .btncmd {

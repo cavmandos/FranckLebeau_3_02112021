@@ -48,16 +48,33 @@ a {
 }
 
 .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
   margin-top: 10px;
   padding: 17px;
   border-radius: 25px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(to top, #9356DC, #FF79DA);
+  background: -webkit-gradient(linear, right bottom, left top, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(to left top, #9356DC, #FF79DA);
   border: none;
   font-size: 14px;
-  -webkit-box-shadow: 1px 5px 5px #d8d7d7;
-          box-shadow: 1px 5px 5px #d8d7d7;
+  -webkit-box-shadow: 1px 4px 4px #d8d7d7;
+          box-shadow: 1px 4px 4px #d8d7d7;
+}
+
+.btn:hover {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  opacity: 0.85;
+  -webkit-box-shadow: 1px 4px 4px 0.5px #adadad;
+          box-shadow: 1px 4px 4px 0.5px #adadad;
 }
 
 .btncmd {
@@ -194,8 +211,20 @@ footer {
           align-items: center;
 }
 
+.contfoot__logotxt:hover {
+  color: #9356DC;
+}
+
 .contfoot__txt {
   margin: 7px 0px 7px 0px;
+}
+
+.contfoot__txt:hover {
+  color: #9356DC;
+}
+
+.contfoot a:hover {
+  color: #9356DC;
 }
 
 .logofooter {
@@ -232,6 +261,31 @@ address a {
   height: 55px;
   -webkit-box-shadow: 1px 5px 5px #e6e6e6;
           box-shadow: 1px 5px 5px #e6e6e6;
+  position: relative;
+  z-index: 1;
+}
+
+.partfonction__box:hover::after {
+  opacity: 1;
+}
+
+.partfonction__box:hover .logo {
+  color: #9356DC;
+}
+
+.partfonction__box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #f5edff;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
+  border-radius: 17px;
 }
 
 .partfonction__number {

@@ -83,10 +83,22 @@ footer {
     &__logotxt {
         display: flex;
         align-items: center;
+
+        &:hover {
+            color: #9356DC;
+        }
     }
 
     &__txt {
         margin: 7px 0px 7px 0px;
+
+        &:hover {
+            color: #9356DC;
+        }
+    }
+
+    & a:hover {
+        color: #9356DC;
     }
 }
 
