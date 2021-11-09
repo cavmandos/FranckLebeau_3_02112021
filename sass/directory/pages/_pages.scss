@@ -17,6 +17,8 @@
         z-index: 1;
 
         &:hover {
+            cursor: pointer;
+
             &::after {
                 opacity: 1;
             }
@@ -129,6 +131,40 @@
         margin: 0px 0px 5px 0px;
         position: relative;
         bottom: 7px;
+    }
+
+    &__hearts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover {
+            & .coeurvide {
+                opacity: 0;
+                transition: 1.1s;
+            }
+            & .coeurplein {
+                transition: 1s;
+                opacity: 1;
+            }
+        }
+
+        & .coeurvide {
+            position: absolute;
+            z-index: 2;
+            opacity: 1;
+            font-size: 22px;
+        }
+
+        & .coeurplein {
+            color: #9356DC;
+            position: relative;
+            bottom: 1px;
+            z-index: 1;
+            opacity: 0;
+            font-size: 22px;
+        }
     }
 
 }
