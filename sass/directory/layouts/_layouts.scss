@@ -13,12 +13,15 @@
 
 .contphoto__img {
     width: 100%;
-    height: 280px;
+    height: 260px;
     object-fit: cover;
 }
 
 .cont-menus {
-    margin: 0px 20px 0px 20px;
+    margin: -50px 0px 0px 0px;
+    border-radius: 30px 30px 0px 0px;
+    position: relative;
+    background-color: #f6f6f6;
 }
 
 .titrecoeur {
@@ -28,37 +31,158 @@
 
     &__titre {
         font-family: "Shrikhand";
-        font-size: 28px;
+        font-size: 26px;
+        margin: 20px 0px 20px 0px;
     }
+
+    &__hearts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover {
+            & .coeurvide {
+                opacity: 0;
+                transition: 1.1s;
+            }
+            & .coeurplein {
+                transition: 1s;
+                opacity: 1;
+            }
+        }
+
+        & .coeurvide {
+            position: absolute;
+            z-index: 2;
+            opacity: 1;
+            font-size: 22px;
+        }
+
+        & .coeurplein {
+            color: #9356DC;
+            position: relative;
+            bottom: 1px;
+            z-index: 1;
+            opacity: 0;
+            font-size: 22px;
+        }
+    }
+}
+
+.contboxmenu {
+    margin: 0px 20px 0px 20px;
 }
 
 .titremenus {
     font-size: 17px;
     text-transform: uppercase;
     font-weight: 300;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-color: #99E2D0;
+        width: 40px;
+        height: 3px;
+        bottom: -8px;
+    }
 }
 
 .boxmenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: white;
+    height: 65px;
     border-radius: 25px;
-    padding: 10px 20px 10px 20px;
-    margin: 10px 0px 10px 0px;
+    margin: 12px 0px 12px 0px;
+    box-shadow: 1px 5px 5px #e6e6e6;
+    cursor: pointer;
+    overflow: hidden;
+
+    &__contgauche {
+        overflow: hidden;
+    }
 
     &__titre {
         font-size: 17px;
         margin: 5px 0px 5px 0px;
-    }
-
-    &__sscont {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        padding-left: 20px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     &__sstitre {
         font-size: 14px;
         font-weight: 300;
         margin: 5px 0px 5px 0px;
+        padding-left: 20px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__contdroite {
+        display: flex;
+        height: 100%;
+    }
+
+    &__prix {
+        display: flex;
+        align-items: flex-end;
+        padding: 0px 25px 10px 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &__logocheck {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #99E2D0;
+        color: white;
+        height: 100%;
+        width: 0px;
+        border-radius: 0px 25px 25px 0px;
+        visibility: hidden;
+        transition: width 0.5s;
+    }
+
+    &:nth-child(2) {
+        animation: popmenu 2s 0.3s backwards;
+    }
+
+    &:nth-child(3) {
+        animation: popmenu 2s 0.6s backwards;
+    }
+
+    &:nth-child(4) {
+        animation: popmenu 2s 0.9s backwards;
+    }
+}
+
+.boxmenu:hover .boxmenu__logocheck {
+    visibility: visible;
+    width: 60px;
+}
+
+.boxmenu:hover i {
+    transform: rotate(360deg);
+    transition-duration: 0.8s;
+  }
+
+@keyframes popmenu {
+    0%{
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 

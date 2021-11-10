@@ -88,6 +88,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 30px 0px 40px 0px;
+  cursor: pointer;
 }
 
 .btncmd .btn {
@@ -384,13 +385,16 @@ a {
 
 .contphoto__img {
   width: 100%;
-  height: 280px;
+  height: 260px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .cont-menus {
-  margin: 0px 20px 0px 20px;
+  margin: -50px 0px 0px 0px;
+  border-radius: 30px 30px 0px 0px;
+  position: relative;
+  background-color: #f6f6f6;
 }
 
 .titrecoeur {
@@ -406,28 +410,72 @@ a {
 
 .titrecoeur__titre {
   font-family: "Shrikhand";
-  font-size: 28px;
+  font-size: 26px;
+  margin: 20px 0px 20px 0px;
+}
+
+.titrecoeur__hearts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.titrecoeur__hearts:hover .coeurvide {
+  opacity: 0;
+  -webkit-transition: 1.1s;
+  transition: 1.1s;
+}
+
+.titrecoeur__hearts:hover .coeurplein {
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 1;
+}
+
+.titrecoeur__hearts .coeurvide {
+  position: absolute;
+  z-index: 2;
+  opacity: 1;
+  font-size: 22px;
+}
+
+.titrecoeur__hearts .coeurplein {
+  color: #9356DC;
+  position: relative;
+  bottom: 1px;
+  z-index: 1;
+  opacity: 0;
+  font-size: 22px;
+}
+
+.contboxmenu {
+  margin: 0px 20px 0px 20px;
 }
 
 .titremenus {
   font-size: 17px;
   text-transform: uppercase;
   font-weight: 300;
+  position: relative;
+}
+
+.titremenus::before {
+  content: "";
+  position: absolute;
+  background-color: #99E2D0;
+  width: 40px;
+  height: 3px;
+  bottom: -8px;
 }
 
 .boxmenu {
-  background-color: white;
-  border-radius: 25px;
-  padding: 10px 20px 10px 20px;
-  margin: 10px 0px 10px 0px;
-}
-
-.boxmenu__titre {
-  font-size: 17px;
-  margin: 5px 0px 5px 0px;
-}
-
-.boxmenu__sscont {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -437,12 +485,130 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: white;
+  height: 65px;
+  border-radius: 25px;
+  margin: 12px 0px 12px 0px;
+  -webkit-box-shadow: 1px 5px 5px #e6e6e6;
+          box-shadow: 1px 5px 5px #e6e6e6;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.boxmenu__contgauche {
+  overflow: hidden;
+}
+
+.boxmenu__titre {
+  font-size: 17px;
+  margin: 5px 0px 5px 0px;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .boxmenu__sstitre {
   font-size: 14px;
   font-weight: 300;
   margin: 5px 0px 5px 0px;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.boxmenu__contdroite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.boxmenu__prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0px 25px 10px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.boxmenu__logocheck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #99E2D0;
+  color: white;
+  height: 100%;
+  width: 0px;
+  border-radius: 0px 25px 25px 0px;
+  visibility: hidden;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.boxmenu:nth-child(2) {
+  -webkit-animation: popmenu 2s 0.3s backwards;
+          animation: popmenu 2s 0.3s backwards;
+}
+
+.boxmenu:nth-child(3) {
+  -webkit-animation: popmenu 2s 0.6s backwards;
+          animation: popmenu 2s 0.6s backwards;
+}
+
+.boxmenu:nth-child(4) {
+  -webkit-animation: popmenu 2s 0.9s backwards;
+          animation: popmenu 2s 0.9s backwards;
+}
+
+.boxmenu:hover .boxmenu__logocheck {
+  visibility: visible;
+  width: 60px;
+}
+
+.boxmenu:hover i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+@-webkit-keyframes popmenu {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes popmenu {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 footer {
