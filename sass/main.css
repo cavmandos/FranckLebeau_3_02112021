@@ -573,6 +573,11 @@ a {
           animation: popmenu 2s 0.9s backwards;
 }
 
+.boxmenu:nth-child(5) {
+  -webkit-animation: popmenu 2s 1.2s backwards;
+          animation: popmenu 2s 1.2s backwards;
+}
+
 .boxmenu:hover .boxmenu__logocheck {
   visibility: visible;
   width: 60px;
