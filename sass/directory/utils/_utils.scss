@@ -1,4 +1,21 @@
+/*COULEURS*/
+
+$colorprimary: #9356DC;
+$colorsecondary: #FF79DA;
+$colortertiary: #99E2D0;
+$colorwhite: #FFF;
+$colorblack: #000000;
+$colorgreylighter: #e6e6e6;
+$colorgreylight: #f6f6f6;
+$colorgreyother: #d8d7d7;
+$colorgrey: #7e7e7e;
+$colorsoftdark: #353535;
+$colorpinksoft: #f5edff;
+$colorgreysoft: #eaeaea;
 $colorbtn: linear-gradient(to left top,#9356DC,#FF79DA);
+
+/*MIXINS*/
+
 @mixin moreshadow {
     box-shadow: 1px 4px 4px 0.5px #adadad;
 }

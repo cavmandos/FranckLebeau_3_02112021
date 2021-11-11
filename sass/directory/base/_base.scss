@@ -1,3 +1,5 @@
+/*FONTS*/
+
 @font-face {
     font-family: 'Roboto';
     src: url('../fonts/Roboto-Regular.ttf');
@@ -39,15 +41,17 @@
     font-display: swap;
 }
 
+/*PROPRIETES GENERALES*/
+
 body {
     box-sizing: border-box;
     width: 100%;
     margin: 0px;
     font-family: 'Roboto';
-    background-color: #f6f6f6;
+    background-color: $colorgreylight;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: $colorblack;
 }
