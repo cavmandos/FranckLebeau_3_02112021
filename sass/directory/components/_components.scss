@@ -76,10 +76,10 @@
 
 @keyframes oh {
     0%{
-        transform: translateX(-500%);
+        transform: translateX(-1000%);
     }
     100%{
-        transform: translateX(1);
+        transform: translateX(0%);
     }
 }
 
@@ -91,7 +91,7 @@
         transform: translateY(800%);
     }
     100%{
-        transform: translateY(1);
+        transform: translateY(0%);
     }
 }
 
@@ -103,7 +103,7 @@
         transform: translateY(-800%);
     }
     100%{
-        transform: translateY(1);
+        transform: translateY(0%);
     }
 }
 
